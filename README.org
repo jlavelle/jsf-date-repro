@@ -1,0 +1,8 @@
+#+TITLE: jsf-date-repro
+
+* Running
+Run `main.js`, passing it an argument to use as a random seed:
+#+BEGIN_SRC bash
+$ node src/main.js some_seed
+#+END_SRC
+Note that when the program is run repeatedly with the same seed, the ~builtinDatetime~ correctly uses the seed, but the ~customDatetime~ does not (the time advances with real time).
